@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">  
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css"> 
+  <link rel="stylesheet" href="main.css"> 
+  
+  <title>Frontend Mentor | Tip calculator app</title> 
+</head>
+<body>
+  <h1 id="title">Spli<br>tter</h1>
+  <div id="main-div">
+    <div id="input-div">
+      <form id="form">
+        <label for="bill">Bill</label>
+        <div class="icon-div">
+          <input id="bill" type="number" placeholder="0"> 
+          <i class="fas fa-dollar-sign"></i>
+        </div>        
+        <br>      
+        
+        <label>Select Tip %</label>
+        <div id="tip-buttons-div">
+          <button class="tip-percent" id="tip-5" type="button" value="5">5%</button>
+          <button class="tip-percent" id="tip-10" type="button" value="10">10%</button>
+          <button class="tip-percent" id="tip-15" type="button" value="15">15%</button>
+          <button class="tip-percent" id="tip-25" type="button" value="25">25%</button>
+          <button class="tip-percent" id="tip-50" type="button" value="50">50%</button>
+          <input id="tip-x" type="number" value="x" placeholder="Custom">
+        </div>
+        <br>
+
+        <label for="no-of-ppl">Number of People</label>
+        <div class="icon-div">
+          <input id="no-of-ppl" type="number" placeholder="0">
+          <i class="fas fa-user"></i>
+          <p id="validation">Can't be zero</p>
+        </div>
+      </form>
+    </div>
+    <div id="output-div">      
+      <div id="bill-amounts-div">
+        <p class="amount-label">Tip Amount<br>
+          <span class="per-person">/ person</span></p>
+        <p class="amount-value" id="tip-amount">$0.00</p>
+        <p class="amount-label">Total<br>
+          <span class="per-person">/ person</span></p>
+        <p class="amount-value" id="bill-amount">$0.00</p>
+      </div>
+
+      <button id="reset" type="reset">Reset</button>
+    </div>
+  </div>
+  <script src="index.js">    
+  </script>    
+</body>
+</html>

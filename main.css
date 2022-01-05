@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&family=Space+Mono:wght@400;700&display=swap');
+body {
+    min-height: 100vh;
+    padding: 0;
+    margin: 0;
+    font-family: 'Space Mono', monospace;
+    background-color: hsl(185, 41%, 84%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#title {
+    text-transform: uppercase;
+    font-size: 18px;
+    letter-spacing: 0.4em;
+    margin-bottom: 3em;
+    color: hsl(186, 14%, 43%);
+}
+
+#main-div {            
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(0, 0%, 100%);
+    padding: 1rem;
+    border-radius: 1rem;
+}
+
+form {
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    margin: 1rem;
+}
+
+label {
+    font-size: 12px;
+    color: hsl(183, 100%, 15%);
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+input {
+    background-color: hsl(189, 41%, 97%);
+    border: none;
+    font-family: inherit;
+    font-size: 20px;
+    font-weight: bold;
+    color: hsl(184, 14%, 56%);
+    border-radius: 5px;
+    box-sizing: border-box;
+    width: 14em;
+    text-align: right;
+    padding: 0.2em 0.5em;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+input:focus {
+    outline-color: hsl(172, 67%, 45%);
+    color: hsl(183, 100%, 15%);
+}
+
+.icon-div {
+    position: relative;
+}
+
+i {   
+    position: absolute;
+    top: 0.7em;
+    left: 0.5em;
+    color: hsl(184, 14%, 56%);
+}
+
+#validation {
+    position: absolute;
+    color: red;
+    font-size: 12px;
+    font-weight: bold;
+    top: -1.8em;
+    right: 0.5em;
+    margin: 0;
+    visibility: hidden;
+}
+
+button {
+    font-family: inherit;
+    background-color: hsl(183, 100%, 15%);
+    border: none;
+    font-size: 16px;
+    font-weight: bold;
+    color: hsl(189, 41%, 97%);
+    width: auto;
+    padding: 0.5em 0;
+    border-radius: 5px;
+}
+
+button:hover, #reset:hover {
+    background-color: hsl(185, 41%, 84%);
+    color: hsl(183, 100%, 15%); 
+}
+
+button:focus {
+    background-color: hsl(172, 67%, 45%);
+    color: hsl(183, 100%, 15%); 
+}
+
+#tip-buttons-div {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+#tip-x {
+    font-size: 16px;
+    font-weight: bold;
+    max-width: 5.4em;
+    text-align: center;     
+}
+
+#output-div {
+    background-color: hsl(183, 100%, 15%);
+    border-radius: 5%;
+    padding: 0em 2em 2em 2em;
+    margin: 0 0.5em 0 1em;
+    display: flex;
+    flex-direction: column;
+}
+
+#bill-amounts-div {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+}
+
+.amount-label {
+    color: hsl(185, 41%, 84%);
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.per-person {
+    color: hsl(186, 14%, 43%);
+}
+
+.amount-value {
+    color: hsl(172, 67%, 45%);
+    font-size: 32px;
+    font-weight: bold;
+    width: 4em;
+    text-align: right;
+}
+
+#reset {
+    align-self: stretch;
+    background-color: hsl(186, 14%, 43%);
+    border: none;
+    color: hsl(183, 100%, 15%);
+    text-transform: uppercase;
+}
+
+@media only screen and (max-width: 375px) {
+    #main-div {            
+    flex-direction: column;
+    }
+
+    #tip-buttons-div {
+    grid-template-columns: repeat(2, 1fr);
+    }
+
+    #tip-x {
+    max-width: 8.4em;
+    }
+}
